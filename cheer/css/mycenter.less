@@ -1,0 +1,553 @@
+ @charset "utf-8";
+
+@main:#ef5e56;
+@border: #ddd;
+@g3:#333;
+@g6:#666;
+@g9:#999;
+h1{
+    font-size: 40px;
+    color: @g3;
+}
+/* 我的订单 */
+ .my_center i{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    background: url(../img/mycenter_head.png) no-repeat;
+    vertical-align: middle;
+    margin-left: 6px;
+ }
+ .top_bg{
+    width: 100%;
+    background: #c94e45;
+    height: 232px;
+    overflow: hidden;
+        .title{
+            width: 1200px;
+            height: 232px;
+            margin: 0 auto;
+            background: url(../img/mycenter_topbg.jpg) no-repeat;
+            padding-top: 40px;
+            color:#fff;
+             .sayhi{
+                margin-bottom: 12px;
+                font-size: 20px;
+             }
+            h1{
+                font-size: 40px;
+            }
+        }
+ }
+.center_wrapper{
+    background: #fff;
+    width: 1200px;
+    height:980px;
+    margin: 0 auto;
+    border-radius: 6px;
+    margin-top: -50px;
+    padding: 36px 20px 10px;
+    box-shadow: 0 1px 1px #d7d7d6;
+        .nav{
+            border-bottom: 4px solid #ddd;
+            display: inline-block;
+            width: 1160px;
+            height:42px;
+            margin-bottom: 26px;
+            ul{
+
+                li{
+                    font-size: 20px;
+                    text-align:center;
+                    height: 42px;
+                    float: left;
+                    width:50%;
+                    i{
+                        width:24px;
+                        height:24px;
+                        display:inline-block;
+                        margin-right: 10px;
+                        line-height: 40px;
+                        vertical-align: top;
+                    }
+                }
+                .current{
+                    border-bottom: 4px solid @main;
+                }
+                .my_reserve a i{
+                    background:url(../img/ok_reserve.svg)no-repeat;
+                }
+                .my_account a i{
+                    background:url(../img/account.svg)no-repeat;
+                }
+            }
+        }
+        .content{
+            margin-bottom: 20px;
+            background: #f7f7f7;
+            border: 1px solid @border;
+            position: relative;
+            .p_header{
+                border-bottom:1px solid @border;
+                padding:10px;
+                .pl{
+                    float: left;
+                    h2{
+                        display: inline-block;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 70px;
+                        height: 20px;
+                        margin-left: 12px;
+                        background:@main;
+                        text-align: center;
+                        border-radius: 6px;
+                        color: #fff;
+                    }
+                }
+                .pm{
+                    display: inline-block; 
+                    vertical-align:bottom;
+                    line-height: 30px;
+                    margin-left: 50px;
+                    p{
+                        display: inline-block;
+                        span{
+                            color:@g9;
+                        }
+                    }
+                }
+                .pr{
+                    float: right;
+                    p{
+                        display: inline-block;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .p_more{
+                padding: 20px 10px 10px;
+                display: inline-block;
+                float: left;
+                img{
+                    width: 98px;
+                    height: 98px;
+                    overflow: hidden;
+                }
+                .time{
+                    margin-left: 20px;
+                    border-right: 1px solid @border;
+                }
+                .info{
+                    display: inline-block;
+                    width: 178px;
+                    height: 100px;
+                    vertical-align: top;
+                    p{
+                        vertical-align: top;
+                        display: block;
+                        margin-bottom: 18px;
+                        font-size: 16px;
+                        color: @g9;
+                        i{
+                            width: 20px;
+                            height: 18px;
+                            display: inline-block;
+                            margin-right: 10px;    
+                            vertical-align: bottom;
+                        }
+                        .box_time{
+                            background: url(../img/time.svg)no-repeat;
+                        }
+                        .box_info{
+                            background: url(../img/box.svg)no-repeat;
+                        }
+                    }
+                    span{
+                        display: block;
+                        margin-left: 28px;
+                    }
+                }
+                .box{
+                    margin-left: 30px;
+                    border-right: 1px solid @border;
+                }
+                .active{
+                    margin-left: 30px;
+                    display: inline-block;
+                    height: 100px;
+                    vertical-align: top;
+                    width: 178px;
+                    .title{
+                        vertical-align: top;
+                        display: block;
+                        margin-bottom: 18px;
+                        font-size: 16px;
+                        color: @g9;
+                        .box_active{
+                            width: 20px;
+                            height: 18px;
+                            display: inline-block;
+                            margin-right: 10px;    
+                            vertical-align: bottom;
+                            background: url(../img/active.svg)no-repeat;
+                        }
+                    }
+                    .a_detail{
+                        margin-right: 44px;
+                    }
+                    .plus_icon{
+                        width: 26px;
+                    }
+                }
+                .btn{
+                    width: 90px;
+                    position: absolute;
+                    bottom: 16px;
+                    right: 10px;
+                    text-align: center;
+                    font-size: 15px;
+                    .unsubscribe{
+                        a{
+                            width: 90px;
+                            height: 32px;
+                            padding: 6px 12px;
+                            display: block;
+                            float: left;
+                            margin-bottom: 10px;
+                            color: @g9;
+                            border: 1px solid @border;
+                        }
+                    }
+                    .payment{
+                        a{
+                            width: 90px;
+                            height: 32px;
+                            float: left;
+                            background: @main;
+                            color: #fff;
+                            padding: 6px 12px;
+                        }
+                    }
+                    .evaluate{
+                        a{
+                            width: 90px;
+                            height: 32px;
+                            padding: 6px 12px;
+                            display: block;
+                            float: left;
+                            margin-bottom: 10px;
+                            color: @g9;
+                            border: 1px solid @border;
+                        }
+                    }
+
+                }
+            }
+
+        }
+ }
+
+ /* 我的账号 */
+ .h556{
+    height: 556px;
+    display: block;
+ }
+.account_wrapper{
+    width: 596px;
+    margin: 0 auto 36px;
+    .pl{
+        width: 180px;
+        display: inline-block;
+        img{
+            width: 180px;
+            height: 180px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        button{
+            width: 92px;
+            height: 32px;
+            border: 1px solid @main;
+            display: block;
+            margin: 0 auto;
+            color: @main;
+        }
+    }
+    .pr{
+        width: 378px;
+        float: right;
+        form{
+            display: inline-block;
+            p{
+                display: block;
+                margin-bottom: 20px;
+                input{
+                    display: left;
+                    border: 1px solid @border;
+                    width: 374px;
+                    height: 46px;
+                    padding-left: 20px;
+                    margin-top: 20px;
+                }
+            }
+
+            a{
+                color: @g9;
+                i{
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+            .man{
+                
+                i{
+                    background: url(../img/male.svg) no-repeat;
+                }
+            }
+            .woman{
+                margin-left: 26px;
+                i{
+                    background: url(../img/female_choised.svg) no-repeat;
+                }
+            }
+        }
+        .date{
+            margin:24px auto 0 auto;
+            p{
+                label{
+                    display: block;
+                    margin-bottom: 16px;
+                }
+                select{
+                    width: 90px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-left: 8px;
+                }
+            }
+        }
+        .phone{
+            margin-top: 26px;
+            p:first-child{
+                margin-bottom: 12px;
+                display: block;
+            }
+            p{
+                display: inline-block;
+            }
+            a{
+                color: @main;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+.save{
+    a{
+        width: 72px;
+        height: 40px;
+        color: #fff;
+        background: @main;
+        display:block;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+/* 退款 */
+.refund{
+    background: #fff;
+    width: 1200px;
+    height: 270px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    .title{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    img{
+        width: 712px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 16px;
+    }
+    ul{
+        margin-left: 340px;
+        margin-bottom: 50px;
+        li{
+            font-size: 20px;
+            width: 206px;
+        }
+    }
+    .footer{
+        p{
+            font-size: 16px;
+            color: @g6;
+            display: inline-block;
+            margin-right: 30px;
+            color: @g9;
+            span{
+                color: @g3;
+                margin-left: 10px;
+            }
+        }
+        p:first-child{
+            padding-right: 30px;
+            border-right: 1px solid @border;
+        }
+    }
+}
+.goback{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f7f7f7;
+    box-shadow: 0 1px 1px #d7d7d6;
+    p{
+        font-size: 20px;
+        color: @g3;
+    }
+    span{
+        font-size: 12px;
+        color: @g9;
+    }
+    .fr{
+        .price_info{
+            display: inline-block;
+            vertical-align: middle;
+            p{
+                color:@main;
+            }
+            span{
+                float: right;
+            }
+        }
+        button{
+            margin-left: 16px;
+            width: 150px;
+            height: 42px;
+            background:@main;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+/* 退款成功 */
+.w442{
+    width: 442px;
+    margin: 0 auto;
+}
+.ok_refund{
+    background: #fff;
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 1px 1px #d7d7d6;
+    border-radius: 6px;
+    img{
+        display:inline-block;
+        vertical-align: middle;
+        margin-right: 16px;
+    }
+    h1{
+        display:inline-block;
+    }
+    p{
+        font-size: 16px;
+        text-align: center;
+        display:inline-block;
+        margin: 50px 4px 0 50px;
+    }
+    a{
+        font-size: 16px;
+        color:@main;
+    }
+}
+/* 感谢评价 */
+.thx{
+    width:240px;
+    margin: 0 auto;
+    margin-top: 100px;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    h1{
+        color: @main;
+        margin-top: 26px;
+    }
+    p{
+        font-size: 16px;
+        color:@g6;
+        margin: 8px 0 auto;
+        text-align: center;
+    }
+}
+/* 评价KTV */
+.assess{
+    width:1200px;
+    // height: 1024px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 40px;
+    h1{
+        padding-top: 58px;
+        margin: 0 auto;
+        width:400px;
+    }
+    .star{
+        width: 424px;
+        margin: 0 auto;
+        margin-top: 80px;
+        h2{
+            margin-right: 42px;
+            display:inline-block;
+            color: @g3;
+            font-size: 32px;
+            i{
+                margin-right: 16px;
+                vertical-align: middle;
+                width: 66px;
+                height:66px;
+                display:inline-block;
+            }
+        }
+        .circumstance{
+            background: url(../img/circumstance.png) no-repeat;
+        }
+        .serve{
+            background: url(../img/serve.png) no-repeat;
+        }
+        .device{
+            background: url(../img/device.png) no-repeat;
+        }
+    }
+    .boundary{
+        width:800px;
+        height:1px;
+        background:@border;
+        margin: 0 auto;
+    }
+    .pub{
+        width: 800px;
+        margin: 0 auto;
+        padding-top: 40px;
+        textarea{
+            padding: 10px;
+            background: #f7f7f7;
+            border: 1px solid @border;
+            width: 666px;
+            height: 100px;
+            font-size: 16px;resize: none;
+        }
+    }
+}

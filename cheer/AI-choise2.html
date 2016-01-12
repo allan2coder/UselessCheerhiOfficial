@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>去嗨-智能选择</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/cheerhi1.ico" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="css/calendar.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css">
+    <!-- 修复网页在大部分移动设备上的显示 -->
+    <meta name="viewport" content="width=device-wdith,initial-scale=1.0">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body style="background:#f7f6f2;">
+    <!-- 顶部 -->
+    <header class="top_bar">
+        <h1 class="brand">
+            <a class="toplogo" href="#"></a>
+            <span class="slogan">睡你麻痹，起来嗨！</span>
+        </h1>
+        <div class="search">
+            <form action="" method="get" id="search_notes">
+                <!-- <div style="display:none;">
+                    <input type="hidden" />
+                </div> -->
+                <span class="icon"></span>
+                <input type="text" onblur="" id="query" placeholder="搜索KTV" />
+            </form>
+        </div>
+        <nav class="top_nav">
+            <ul>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 预定页内容 -->
+    <div class="wrapper">
+        <div class="w1600">
+            <div class="appdl">
+                <i></i>
+                <a href="#">APP客户端下载</a>
+                <div class="hehe"></div>
+            </div>
+
+            <div class="con_main">
+                <!-- 标题 -->
+                <div class="bread_nav">
+                    <a href="#">首页</a>
+                    <span>></span>
+                    <a href="#">V-show KTV详情页</a>
+                </div>
+                <!-- banner内容 -->
+                <div class="banner">
+                    <div class="b_pic">
+                        <img src="img/banner/yugu_ktv1.png" alt="" />
+                    </div>
+                    <div class="b_tile bom_line">
+                        <h1>V-Show 玉古店</h1>
+                        <i></i>
+                        <span>仅售38元，最高价值325元的好乐迪KTV,周一至周五12:00 至19:00 /24:00至次日05:00，5小时欢唱，小包可用，适用3-5人使用！可升级包间！</span>
+                    </div>
+                    <div class="b_contact">
+                        <p class="add"><span>地址：</span>西湖区玉古路168号</p>     
+                        <p class="add"><span class="tel">电话：</span>0571-88888888</p>
+                    </div>
+                </div>
+                <!-- 详细内容 -->
+                <div class="ktv_info clearfix">
+                    <div class="info_nav bom_line">
+                        <ul>
+                            <li class="detail navbg">
+                                <a href="#">
+                                    <img src="img/checked_praise_icon.svg" alt="" />
+                                    时段详情
+                                </a>
+                            </li>
+                            <li class="intro">
+                                <a href="#">
+                                    <img src="img/unchecked_praise_icon.svg" alt="" />
+                                    KTV 介绍
+                                </a>
+                            </li>
+                            <li class="praise">
+                                <a href="#">
+                                    <img src="img/unchecked_praise_icon.svg" alt="" />
+                                    口碑预评价
+                                    <span>251条</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="AI_mod w1160 clearfix">
+                        <p style="margin: 20px 0px;">开唱时间</p>
+                        <div class="">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-lg fill_in" data-toggle="modal" data-target="#myModal">
+                            点击填写预定时间和时长 <i></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog clearfix">
+                                    <div class="modal-content">
+
+                                        <div class="pop_header">
+                                            <button type="button" id="pop_close" class=" close" data-dismiss="modal" aria-label="Close"><span class="" aria-hidden="true">&times;</span></button>
+                                            <h1 class="pop_title">您所要预定的时间和时长</h1>
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <div class="content-datepicker shadow-b">
+                                                日期选择<input type="text" id="date" readonly="">
+                                            </div>
+
+
+                                            <div class="timepicker_pluge shadow-b">
+                                                进场时间<input id="datetimepicker" readonly="" type="text" value="00:00">
+                                                    <span class="up shadow-b"></span>
+                                                    <span class="down shadow-b"></span>
+                                            </div>
+
+
+                                            <div class="hours shadow-b">
+                                                唱多久<input id="h-long" readonly="" type="text" value="1" >小时
+                                                <span class="h-up shadow-b"></span>
+                                                <span class="h-down shadow-b"></span>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="popbox_footer modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">提交订单</button>
+                                            <!-- <a type="button" class="btn fr">Save changes</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p style="margin: 20px 0px;">包厢选择</p>
+                        <div class="">
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">小包</a></li>
+                                    <li><a href="#">中包</a></li>
+                                    <li><a href="#">大包</a></li>
+                                    <li><a href="#">Vip包</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p style="margin: 20px 0px;">主题选择</p>
+                        <div class="">
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">中国风</a></li>
+                                    <li><a href="#">日式</a></li>
+                                    <li><a href="#">复古</a></li>
+                                    <li><a href="#">英雄联盟</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p style="margin: 20px 0px;">活动套餐</p>
+                        <div class="">
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">有点餐</a></li>
+                                    <li><a href="#">无点餐</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="submit_order fr">
+                        <p>￥168.9</p>
+                        <button>提交订单</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <div class="w1600">
+
+        </div>
+    </footer>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- 滚动条 -->
+<script src="js/jquery.nicescroll.min.js"></script>
+<!-- 通用主要的js -->
+<script src="js/main.js"></script>
+<!-- 日历插件datepicker -->
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.datetimepicker.js"></script>
+<!-- 日历 -->
+<script>
+
+    //日期选择：datepicker
+    $.fn.datepicker.dates['cn'] = {
+        days: ["周日", "周一", "周二", "周三", "周四", "周五", "周六", "周日"],
+        daysShort: ["日", "一", "二", "三", "四", "五", "六", "七"],
+        daysMin: ["日", "一", "二", "三", "四", "五", "六", "七"],
+        months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        monthsShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        today: "今天",
+        clear: "清除"
+    };
+
+    var date= new Date();
+    date.setDate(date.getDate());
+
+    $("#date").datepicker({
+        format: "yyyy-mm-dd",
+        language: "cn",
+        todayBtn: true,
+        calendarWeeks: true,
+        todayHighlight: true,
+        autoclose:true,
+        startDate:date//设置能选中的其实时间
+    }).datepicker("setDate", new Date());
+    //.datepicker("setDate", new Date())为显示当前日期
+
+    $('.content-datepicker').click(function(){
+        $('#date').datepicker('show');
+    })
+
+    // 进场时间：Timepicker
+    var time= new Date();
+    time.setDate(date.getHours);
+
+    jQuery('#datetimepicker').datetimepicker({
+      datepicker:false,
+      format:'H:i',
+      allowTimes:[
+          '00:00','00:30', '01:00', '01:30','02:30', '03:00', 
+          '04:00', '04:30', '05:00','05:30', '06:00', '06:30',
+          '07:00', '07:30', '08:00', '08:30', '09:00','09:30',
+          '10:00','10:30', '11:00', '11:30','12:30', '13:00', '13:30', 
+          '14:00', '14:30', '15:00','15:30', '16:00', '16:30',
+          '17:00', '17:30', '18:00', '18:30', '19:00','19:30',
+          '18:00', '18:30', '20:00', '20:30', '21:00','21:30',
+          '22:00', '22:30', '23:00', '23:30'
+     ]
+
+    });
+
+// <div class="timepicker_pluge shadow-b">
+//     进场时间<input id="datetimepicker" readonly="" type="text" value="00:00">
+//     <span class="up shadow-b"></span>
+//     <span class="down shadow-b"></span>
+// </div>
+
+
+
+    $(".up").click(function(){
+        // $(".xdsoft_time").removeAttar("")
+        var p_class = $(".xdsoft_current").getHours();
+            alert(p_class);
+        $("#datetimepicker").value('p_class');
+
+    });
+
+
+
+
+
+    //唱多久
+    var i=$("#h-long").val();
+
+    $(".h-up").click(function(){
+        if(i<7){
+             i++;
+            $("#h-long").val(i);
+        }
+    });
+
+    $(".h-down").click(function(){
+        if(i<7&&i>1||i==7){
+             i--;
+            $("#h-long").val(i);
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+@charset "utf-8";
+h1 {
+  font-size: 40px;
+  color: #333333;
+}
+/* 我的订单 */
+.my_center i {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background: url(../img/mycenter_head.png) no-repeat;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+.top_bg {
+  width: 100%;
+  background: #c94e45;
+  height: 232px;
+  overflow: hidden;
+}
+.top_bg .title {
+  width: 1200px;
+  height: 232px;
+  margin: 0 auto;
+  background: url(../img/mycenter_topbg.jpg) no-repeat;
+  padding-top: 40px;
+  color: #fff;
+}
+.top_bg .title .sayhi {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.top_bg .title h1 {
+  font-size: 40px;
+}
+.center_wrapper {
+  background: #fff;
+  width: 1200px;
+  height: 980px;
+  margin: 0 auto;
+  border-radius: 6px;
+  margin-top: -50px;
+  padding: 36px 20px 10px;
+  box-shadow: 0 1px 1px #d7d7d6;
+}
+.center_wrapper .nav {
+  border-bottom: 4px solid #ddd;
+  display: inline-block;
+  width: 1160px;
+  height: 42px;
+  margin-bottom: 26px;
+}
+.center_wrapper .nav ul li {
+  font-size: 20px;
+  text-align: center;
+  height: 42px;
+  float: left;
+  width: 50%;
+}
+.center_wrapper .nav ul li i {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 40px;
+  vertical-align: top;
+}
+.center_wrapper .nav ul .current {
+  border-bottom: 4px solid #ef5e56;
+}
+.center_wrapper .nav ul .my_reserve a i {
+  background: url(../img/ok_reserve.svg) no-repeat;
+}
+.center_wrapper .nav ul .my_account a i {
+  background: url(../img/account.svg) no-repeat;
+}
+.center_wrapper .content {
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  position: relative;
+}
+.center_wrapper .content .p_header {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+}
+.center_wrapper .content .p_header .pl {
+  float: left;
+}
+.center_wrapper .content .p_header .pl h2 {
+  display: inline-block;
+}
+.center_wrapper .content .p_header .pl i {
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  margin-left: 12px;
+  background: #ef5e56;
+  text-align: center;
+  border-radius: 6px;
+  color: #fff;
+}
+.center_wrapper .content .p_header .pm {
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 30px;
+  margin-left: 50px;
+}
+.center_wrapper .content .p_header .pm p {
+  display: inline-block;
+}
+.center_wrapper .content .p_header .pm p span {
+  color: #999999;
+}
+.center_wrapper .content .p_header .pr {
+  float: right;
+}
+.center_wrapper .content .p_header .pr p {
+  display: inline-block;
+  line-height: 30px;
+}
+.center_wrapper .content .p_more {
+  padding: 20px 10px 10px;
+  display: inline-block;
+  float: left;
+}
+.center_wrapper .content .p_more img {
+  width: 98px;
+  height: 98px;
+  overflow: hidden;
+}
+.center_wrapper .content .p_more .time {
+  margin-left: 20px;
+  border-right: 1px solid #dddddd;
+}
+.center_wrapper .content .p_more .info {
+  display: inline-block;
+  width: 178px;
+  height: 100px;
+  vertical-align: top;
+}
+.center_wrapper .content .p_more .info p {
+  vertical-align: top;
+  display: block;
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: #999999;
+}
+.center_wrapper .content .p_more .info p i {
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+.center_wrapper .content .p_more .info p .box_time {
+  background: url(../img/time.svg) no-repeat;
+}
+.center_wrapper .content .p_more .info p .box_info {
+  background: url(../img/box.svg) no-repeat;
+}
+.center_wrapper .content .p_more .info span {
+  display: block;
+  margin-left: 28px;
+}
+.center_wrapper .content .p_more .box {
+  margin-left: 30px;
+  border-right: 1px solid #dddddd;
+}
+.center_wrapper .content .p_more .active {
+  margin-left: 30px;
+  display: inline-block;
+  height: 100px;
+  vertical-align: top;
+  width: 178px;
+}
+.center_wrapper .content .p_more .active .title {
+  vertical-align: top;
+  display: block;
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: #999999;
+}
+.center_wrapper .content .p_more .active .title .box_active {
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+  background: url(../img/active.svg) no-repeat;
+}
+.center_wrapper .content .p_more .active .a_detail {
+  margin-right: 44px;
+}
+.center_wrapper .content .p_more .active .plus_icon {
+  width: 26px;
+}
+.center_wrapper .content .p_more .btn {
+  width: 90px;
+  position: absolute;
+  bottom: 16px;
+  right: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+.center_wrapper .content .p_more .btn .unsubscribe a {
+  width: 90px;
+  height: 32px;
+  padding: 6px 12px;
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+.center_wrapper .content .p_more .btn .payment a {
+  width: 90px;
+  height: 32px;
+  float: left;
+  background: #ef5e56;
+  color: #fff;
+  padding: 6px 12px;
+}
+.center_wrapper .content .p_more .btn .evaluate a {
+  width: 90px;
+  height: 32px;
+  padding: 6px 12px;
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+/* 我的账号 */
+.h556 {
+  height: 556px;
+  display: block;
+}
+.account_wrapper {
+  width: 596px;
+  margin: 0 auto 36px;
+}
+.account_wrapper .pl {
+  width: 180px;
+  display: inline-block;
+}
+.account_wrapper .pl img {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.account_wrapper .pl button {
+  width: 92px;
+  height: 32px;
+  border: 1px solid #ef5e56;
+  display: block;
+  margin: 0 auto;
+  color: #ef5e56;
+}
+.account_wrapper .pr {
+  width: 378px;
+  float: right;
+}
+.account_wrapper .pr form {
+  display: inline-block;
+}
+.account_wrapper .pr form p {
+  display: block;
+  margin-bottom: 20px;
+}
+.account_wrapper .pr form p input {
+  display: left;
+  border: 1px solid #dddddd;
+  width: 374px;
+  height: 46px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.account_wrapper .pr form a {
+  color: #999999;
+}
+.account_wrapper .pr form a i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.account_wrapper .pr form .man i {
+  background: url(../img/male.svg) no-repeat;
+}
+.account_wrapper .pr form .woman {
+  margin-left: 26px;
+}
+.account_wrapper .pr form .woman i {
+  background: url(../img/female_choised.svg) no-repeat;
+}
+.account_wrapper .pr .date {
+  margin: 24px auto 0 auto;
+}
+.account_wrapper .pr .date p label {
+  display: block;
+  margin-bottom: 16px;
+}
+.account_wrapper .pr .date p select {
+  width: 90px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 8px;
+}
+.account_wrapper .pr .phone {
+  margin-top: 26px;
+}
+.account_wrapper .pr .phone p:first-child {
+  margin-bottom: 12px;
+  display: block;
+}
+.account_wrapper .pr .phone p {
+  display: inline-block;
+}
+.account_wrapper .pr .phone a {
+  color: #ef5e56;
+  margin-left: 6px;
+}
+.save a {
+  width: 72px;
+  height: 40px;
+  color: #fff;
+  background: #ef5e56;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+}
+/* 退款 */
+.refund {
+  background: #fff;
+  width: 1200px;
+  height: 270px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 40px;
+}
+.refund .title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.refund img {
+  width: 712px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 16px;
+}
+.refund ul {
+  margin-left: 340px;
+  margin-bottom: 50px;
+}
+.refund ul li {
+  font-size: 20px;
+  width: 206px;
+}
+.refund .footer p {
+  font-size: 16px;
+  color: #666666;
+  display: inline-block;
+  margin-right: 30px;
+  color: #999999;
+}
+.refund .footer p span {
+  color: #333333;
+  margin-left: 10px;
+}
+.refund .footer p:first-child {
+  padding-right: 30px;
+  border-right: 1px solid #dddddd;
+}
+.goback {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f7f7f7;
+  box-shadow: 0 1px 1px #d7d7d6;
+}
+.goback p {
+  font-size: 20px;
+  color: #333333;
+}
+.goback span {
+  font-size: 12px;
+  color: #999999;
+}
+.goback .fr .price_info {
+  display: inline-block;
+  vertical-align: middle;
+}
+.goback .fr .price_info p {
+  color: #ef5e56;
+}
+.goback .fr .price_info span {
+  float: right;
+}
+.goback .fr button {
+  margin-left: 16px;
+  width: 150px;
+  height: 42px;
+  background: #ef5e56;
+  color: #fff;
+  font-size: 16px;
+}
+/* 退款成功 */
+.w442 {
+  width: 442px;
+  margin: 0 auto;
+}
+.ok_refund {
+  background: #fff;
+  width: 1200px;
+  height: 240px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 40px;
+  box-shadow: 0 1px 1px #d7d7d6;
+  border-radius: 6px;
+}
+.ok_refund img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.ok_refund h1 {
+  display: inline-block;
+}
+.ok_refund p {
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  margin: 50px 4px 0 50px;
+}
+.ok_refund a {
+  font-size: 16px;
+  color: #ef5e56;
+}
+/* 感谢评价 */
+.thx {
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.thx img {
+  display: block;
+  margin: 0 auto;
+}
+.thx h1 {
+  color: #ef5e56;
+  margin-top: 26px;
+}
+.thx p {
+  font-size: 16px;
+  color: #666666;
+  margin: 8px 0 auto;
+  text-align: center;
+}
+/* 评价KTV */
+.assess {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 40px;
+}
+.assess h1 {
+  padding-top: 58px;
+  margin: 0 auto;
+  width: 400px;
+}
+.assess .star {
+  width: 424px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.assess .star h2 {
+  margin-right: 42px;
+  display: inline-block;
+  color: #333333;
+  font-size: 32px;
+}
+.assess .star h2 i {
+  margin-right: 16px;
+  vertical-align: middle;
+  width: 66px;
+  height: 66px;
+  display: inline-block;
+}
+.assess .star .circumstance {
+  background: url(../img/circumstance.png) no-repeat;
+}
+.assess .star .serve {
+  background: url(../img/serve.png) no-repeat;
+}
+.assess .star .device {
+  background: url(../img/device.png) no-repeat;
+}
+.assess .boundary {
+  width: 800px;
+  height: 1px;
+  background: #dddddd;
+  margin: 0 auto;
+}
+.assess .pub {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.assess .pub textarea {
+  padding: 10px;
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  width: 666px;
+  height: 100px;
+  font-size: 16px;
+  resize: none;
+}

@@ -1,0 +1,248 @@
+@charset "utf-8";
+/*
+*付款流程css
+*/
+.pay_flow{}
+.step_bg{
+    background: url(../img/paystep/orderStep1.png) no-repeat;
+}
+.steps{
+    font-size: 16px;
+    margin-top: 20px;
+    color: #999;
+}
+.steps ul{
+    width: 1000px;
+    margin: 0 auto;
+}
+.step1{
+}
+.step2{
+    margin-left: 242px; 
+}
+.step3{
+    margin-left: 230px; 
+}
+.step4{
+    margin-left: 220px; 
+}
+.cur_step{
+    color: #f15d52;
+}
+.main{
+    background: #fff;
+    width: 1200px;
+}
+.main h2{
+    border-bottom: 1px solid #ddd;
+    line-height: 60px;
+}
+.content{
+    margin: 20px 0;
+
+    color: #333;
+}
+.main_left{
+    width: 350px;
+    border-right: 1px solid #ddd;
+    display: inline-block;
+}
+.main i{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.date i{
+    background: url(../img/paystep/date_icon.svg);
+}
+.ktvbox i{
+    background: url(../img/paystep/ktvbox_icon.svg);
+}
+.main_left p, .main_footer{
+    display: inline-block;
+}
+.ktvbox{
+    margin-top: 16px;
+}
+.main_right textarea{
+    width: 780px;
+    height: 82px;
+    display: inline-block;
+    float: right;
+    padding: 10px;
+}
+.main_footer{
+    margin-bottom: 1px;
+    padding-bottom: 24px;
+    display: block;
+    color: #999;
+}
+.main_footer i{
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    background: url(../img/paystep/edit.svg);
+}
+/*支付总计*/
+.payment p{
+    margin: 30px 24px 0 0;
+    display: inline-block;
+    font-size: 16px;
+}
+.payment span{
+    color: #f15d52;
+}
+.payment button{
+    background: #f15d52;
+    border-radius: 4px;
+    color: #fff;
+    height: 30px;
+    padding: 0 16px;
+}
+.payment button:hover{
+    background: #d1524b;
+}
+
+/*您已预定成功样式*/
+.step_bg2{
+    background: url(../img/paystep/orderStep2.png) no-repeat;
+}
+.com_step{
+    
+}
+.com_step h1{
+    text-align: center;
+    padding-top: 36px;
+    font-size: 40px;
+}
+.com_step h1 i{
+    margin-right: 18px;
+    width: 62px;
+    height:76px;
+}
+.step2_content h1 i{
+    background: url(../img/paystep/success_order.svg);
+}
+.com_step p{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.com_step span{
+    color: #999;
+}
+.goodname{
+    margin-top: 52px;
+}
+.com_step button{
+    display: block;
+    background: #f15d52;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    padding: 0 24px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.com_step button:hover{
+    background: #d1524b;
+}
+.com_step .pay_info{
+    padding-top: 20px;
+}
+.step2_footer{
+    clear: both;
+    content: '';
+}
+.step2_footer img{
+    margin: 0 auto;
+    width: 276px;
+    display: block;
+    margin-bottom: 30px;
+}
+.step2_footer .code{
+    width: 190px;
+    height: 190px;
+    margin-top: 90px;
+    display: block;
+    border: 1px solid #e2e2e2;
+    border-radius: 95px;
+    margin: 0 auto;
+    background: url(../img/paystep/Two-dimensional_code.png) no-repeat 50px 50px; 
+}
+#shareto{
+    width: 120px;
+    margin: 20px auto;
+    padding-bottom: 30px;
+}
+#shareto .ico-fn-weibo{
+    display: inline-block;
+    margin: 0 auto;
+    width: 34px;
+    height: 34px;
+    background: url(../img/paystep/weibo_icon.svg) no-repeat;
+    margin-right: 38px;
+}
+#shareto .ico-fn-qzone{
+    display: inline-block;
+    margin: 0 auto;
+    width: 34px;
+    height: 34px;
+    background: url(../img/paystep/qq_icon.svg) no-repeat;
+}
+
+/*付款成功*/
+.step4_content h1 i{
+    background: url(../img/paystep/payment_success.svg) no-repeat;
+}
+.order_num a{
+    color: #f15d52;
+}
+
+/*支付方式*/
+.paymain{
+    margin-top: 20px;
+    background: #fff;
+    padding-top: 16px;
+}
+.paymain ul{
+}
+.paymain ul li{
+    border-bottom: 2px solid #f15d52;
+    font-size: 20px;
+
+}
+.paymain .payway{
+    margin-top: 16px;
+    padding-bottom:  20px
+}
+.payway i{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.pay_choise i{
+    background: url(../img/iconfont-radio.gif) no-repeat;
+}
+.pay_choised i{
+    background: url(../img/iconfont-circle.gif) no-repeat;
+}
+.paymain .payway span{
+    width: 109px;
+    height: 42px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    margin-left: 16px;
+    background: url(../img/paystep/zhifubao.png) no-repeat;
+}
+
+
+/*公共*/
+.step_bg{
+    width: 974px;
+    height: 41px;
+    margin: 20px auto 0;
+}

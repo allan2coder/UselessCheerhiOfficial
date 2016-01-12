@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>去嗨-智能选择</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/cheerhi1.ico" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body style="background:#f7f6f2;">
+    <!-- 顶部 -->
+    <header class="top_bar">
+        <h1 class="brand">
+            <a class="toplogo" href="#"></a>
+            <span class="slogan">睡你麻痹，起来嗨！</span>
+        </h1>
+        <div class="search">
+            <form action="" method="get" id="search_notes">
+                <!-- <div style="display:none;">
+                    <input type="hidden" />
+                </div> -->
+                <span class="icon"></span>
+                <input type="text" onblur="" id="query" placeholder="搜索KTV" />
+            </form>
+        </div>
+        <nav class="top_nav">
+            <ul>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 预定页内容 -->
+    <div class="wrapper">
+        <div class="w1600">
+            <div class="appdl">
+                <i></i>
+                <a href="#">APP客户端下载</a>
+                <div class="hehe"></div>
+            </div>
+
+            <div class="con_main">
+                <!-- 标题 -->
+                <div class="bread_nav">
+                    <a href="#">首页</a>
+                    <span>></span>
+                    <a href="#">V-show KTV详情页</a>
+                </div>
+                <!-- banner内容 -->
+                <div class="banner">
+                    <div class="b_pic">
+                        <img src="img/banner/yugu_ktv1.png" alt="" />
+                    </div>
+                    <div class="b_tile bom_line">
+                        <h1>V-Show 玉古店</h1>
+                        <i></i>
+                        <span>仅售38元，最高价值325元的好乐迪KTV,周一至周五12:00 至19:00 /24:00至次日05:00，5小时欢唱，小包可用，适用3-5人使用！可升级包间！</span>
+                    </div>
+                    <div class="b_contact">
+                        <p class="add"><span>地址：</span>西湖区玉古路168号</p>     
+                        <p class="add"><span class="tel">电话：</span>0571-88888888</p>
+                    </div>
+                </div>
+                <!-- 详细内容 -->
+                <div class="ktv_info clearfix">
+                    <div class="info_nav bom_line">
+                        <ul>
+                            <li class="detail navbg">
+                                <a href="#">
+                                    <img src="img/checked_praise_icon.svg" alt="" />
+                                    时段详情
+                                </a>
+                            </li>
+                            <li class="intro">
+                                <a href="#">
+                                    <img src="img/unchecked_praise_icon.svg" alt="" />
+                                    KTV 介绍
+                                </a>
+                            </li>
+                            <li class="praise">
+                                <a href="#">
+                                    <img src="img/unchecked_praise_icon.svg" alt="" />
+                                    口碑预评价
+                                    <span>251条</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="AI_mod w1160 clearfix">
+                        <p style="margin: 20px 0px;">开唱时间</p>
+                        <div class="">
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">今天（周一）03-23</a></li>
+                                    <li><a href="#">周二 03-24</a></li>
+                                    <li><a href="#">周三 03-25</a></li>
+                                    <li><a href="#">周四 03-26</a></li>
+                                    <li><a href="#">周五 03-27</a></li>
+                                    <li><a href="#">周六 03-28</a></li>
+                                    <li><a href="#">周日 03-29</a></li>
+                                    <li><a href="#">周一 03-30</a></li>
+                                    <li><a href="#">周一 03-30</a></li>
+                                </ul>
+                                <a class="checkall" href="#">查看全部日期</a>
+                            </div>
+                        </div>
+                        <p style="margin: 20px 0px;">包厢选择</p>
+                        <div class="">
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">小包</a></li>
+                                    <li><a href="#">中包</a></li>
+                                    <li><a href="#">大包</a></li>
+                                    <li><a href="#">Vip包</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p style="margin: 20px 0px;">主题选择</p>
+                        <div class="">
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">中国风</a></li>
+                                    <li><a href="#">日式</a></li>
+                                    <li><a href="#">复古</a></li>
+                                    <li><a href="#">英雄联盟</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p style="margin: 20px 0px;">活动套餐</p>
+                        <div class="">
+                            <div class="clearfix">
+                                <ul>
+                                    <li><a href="#">有点餐</a></li>
+                                    <li><a href="#">无点餐</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommend">
+                        <h1>根据条件为您推荐6种方案</h1>
+                        <div class="act_first">
+                            <ul>
+                                <li>
+                                    <p>活动优先</p>
+                                    <span class="a_time">12:00-15:00</span><br />
+                                    <span class="a_info">3小时欢唱<b class="c_red">套餐</b></span><br />
+                                    <span class="a_price c_red">￥30</span>
+                                    <i><img src="img/iconfont-radio.svg" alt="" /></i>
+                                </li>
+                                <li>
+                                    <p>活动优先</p>
+                                    <span class="a_time">12:00-15:00</span><br />
+                                    <span class="a_info">3小时欢唱</span><br />
+                                    <span class="a_price c_red">￥30</span>
+                                    <i><img src="img/iconfont-radio.svg" alt="" /></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="b_line"></div>
+
+                        <!-- <div id="run1" class="activity">
+
+                            <a class="prev" href="javascript:;"></a>
+                            <a class="next" href="javascript:;"></a>
+                            <span class="prev_bg"></span>
+                            <span class="next_bg"></span>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-radio.gif" alt="" /></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-radio.gif" alt="" /></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <p>时间匹配优先</p>
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-radio.gif" alt="" /></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> -->
+
+                        <div class="img-scroll">
+                            <span class="prev"></span>
+                            <span class="next"></span>
+                            <span class="prev_bg"></span>
+                            <span class="next_bg"></span>
+
+                            <div class="img-list">
+                                <ul>
+                                    <li>
+                                        <p>时间匹配优先</p>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-circle.svg" alt="" /></i>
+                                    </li>
+                                    <li>
+                                        <p>时间匹配优先</p>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-radio.svg" alt="" /></i>
+                                    </li>
+                                    <li>
+                                        <p>时间匹配优先</p>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-radio.svg" alt="" /></i>
+                                    </li>
+                                    <li>
+                                        <p>时间匹配优先</p>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-radio.svg" alt="" /></i>
+                                    </li>
+                                    <li>
+                                        <p>时间匹配优先</p>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-radio.svg" alt="" /></i>
+                                    </li>
+                                    <li>
+                                        <p>时间匹配优先</p>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <div class="plus fl">
+                                        +
+                                        </div>
+                                        <div class="fl">
+                                            <span class="a_time">12:00-15:00</span><br />
+                                            <span class="a_info">3小时欢唱</span><br />
+                                            <span class="a_price c_red">￥30</span>
+                                        </div>
+                                        <i><img src="img/iconfont-radio.svg" alt="" /></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="submit_order fr">
+                        <p>￥168.9</p>
+                        <button>提交订单</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <div class="w1600">
+
+        </div>
+    </footer>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+     function DY_scroll(wraper,prev,next,img,speed,or)
+     {
+      var wraper = $(wraper);
+      var prev = $(prev);
+      var next = $(next);
+      var img = $(img).find('ul');
+      var w = img.find('li').outerWidth(true);
+      var s = speed;
+
+
+      // 鼠标移入
+      $('.next_bg,.next').mouseenter(function(){
+            {
+                $('.next').css('display','block');
+            }
+      });
+      $('.prev_bg,.prev').mouseenter(function(){
+            {
+                $('.prev').css('display','block');
+            }
+      });
+      
+      // 鼠标移出
+      $('.next_bg').mouseleave(function(){
+            {
+                $('.next').css('display','none');
+            }
+      });
+      $('.prev_bg').mouseleave(function(){
+            {
+                $('.prev').css('display','none');
+            }
+      });
+      
+      next.click(function()
+       {
+        img.animate({'margin-left':-w},function()
+              {
+               img.find('li').eq(0).appendTo(img);
+               img.css({'margin-left':0});
+               });
+        });
+
+      prev.click(function()
+           {
+            img.find('li:last').prependTo(img);
+            img.css({'margin-left':-w});
+            img.animate({'margin-left':0});
+            });
+
+      if (or == true)
+      {
+       ad = setInterval(function() { next.click();},s*10);
+       wraper.hover(function(){clearInterval(ad);},function(){ad = setInterval(function() { next.click();},s*10);});
+
+      }
+     }
+     DY_scroll('.img-scroll','.prev','.next','.img-list',3,false);// true为自动播放，不加此参数或false就默认不自动
+</script>
+</body>
+</html>

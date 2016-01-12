@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>去嗨-KTV介绍</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/cheerhi1.ico" /><!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="background:#f7f6f2;">
+    <!-- 顶部 -->
+    <header class="top_bar">
+        <h1 class="brand">
+            <a class="toplogo" href="#"></a>
+            <span class="slogan">睡你麻痹，起来嗨！</span>
+        </h1>
+        <div class="search">
+            <form action="" method="get" id="search_notes">
+                <!-- <div style="display:none;">
+                    <input type="hidden" />
+                </div> -->
+                <span class="icon"></span>
+                <input type="text" onblur="" id="query" placeholder="搜索KTV" />
+            </form>
+        </div>
+        <nav class="top_nav">
+            <ul>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 预定页内容 -->
+    <div class="wrapper">
+        <div class="w1600">
+            <div class="appdl">
+                <i></i>
+                <a href="#">APP客户端下载</a>
+                <div class="hehe"></div>
+            </div>
+
+            <div class="con_main">
+                <!-- 标题 -->
+                <div class="bread_nav">
+                    <a href="#">首页</a>
+                    <span>></span>
+                    <a href="#">V-show KTV详情页</a>
+                </div>
+                <!-- banner内容 -->
+                <div class="banner">
+                    <div class="b_pic">
+                        <img src="img/banner/yugu_ktv1.png" alt="" />
+                    </div>
+                    <div class="b_tile">
+                        <h1>V-Show 玉古店</h1>
+                        <i></i>
+                        <span>仅售38元，最高价值325元的好乐迪KTV,周一至周五12:00 至19:00 /24:00至次日05:00，5小时欢唱，小包可用，适用3-5人使用！可升级包间！</span>
+                    </div>
+                    <div class="b_contact">
+                        <p class="add"><span>地址：</span>西湖区玉古路168号</p>     
+                        <p class="add"><span class="tel">电话：</span>0571-88888888</p>
+                    </div>
+                </div>
+                <!-- 详细内容 -->
+                <div class="ktv_info clearfix">
+                    <div class="info_nav bom_line">
+                        <ul>
+                            <li class="detail">
+                                <a href="#">
+                                    <img src="img/unchecked_praise_icon.svg" alt="" />
+                                    时段详情
+                                </a>
+                            </li>
+                            <li class="intro  navbg">
+                                <a href="#">
+                                    <img src="img/checked_praise_icon.svg" alt="" />
+                                    KTV 介绍
+                                </a>
+                            </li>
+                            <li class="praise">
+                                <a href="#">
+                                    <img src="img/unchecked_praise_icon.svg" alt="" />
+                                    口碑预评价
+                                    <span>251条</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="praise_mod w1160 clearfix">
+                        <h2>KTV评价</h2>
+                        <div class="map fl">
+                            <div class="map_main">
+                                <!--百度地图容器-->
+                                    <div style="width:580px;height:320px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+                                    </p>
+                                  <script type="text/javascript">
+                                    //创建和初始化地图函数：
+                                    function initMap(){
+                                      createMap();//创建地图
+                                      setMapEvent();//设置地图事件
+                                      addMapControl();//向地图添加控件
+                                      addMapOverlay();//向地图添加覆盖物
+                                    }
+                                    function createMap(){ 
+                                      map = new BMap.Map("map"); 
+                                      map.centerAndZoom(new BMap.Point(116.403874,39.914889),12);
+                                    }
+                                    function setMapEvent(){
+                                      map.enableScrollWheelZoom();
+                                      map.enableKeyboard();
+                                      map.enableDragging();
+                                      map.enableDoubleClickZoom()
+                                    }
+                                    function addClickHandler(target,window){
+                                      target.addEventListener("click",function(){
+                                        target.openInfoWindow(window);
+                                      });
+                                    }
+                                    function addMapOverlay(){
+                                    }
+                                    //向地图添加控件
+                                    function addMapControl(){
+                                      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                                      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                                      map.addControl(scaleControl);
+                                      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                                      map.addControl(navControl);
+                                      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+                                      map.addControl(overviewControl);
+                                    }
+                                    var map;
+                                      initMap();
+                                  </script>
+                            </div>
+
+                            <h2>提供服务</h2>
+                            <div class="include">
+                                <ul>
+                                    <li class="meal"><i></i>酒水自助</li>
+                                    <li class="meal"><i></i>套餐优惠</li>
+                                    <li class="meal"><i></i>主题包厢</li>
+                                    <li class="meal"><i></i>主题包厢</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="KTV_intrduce fr">
+                            <h2>V-Show 玉古店</h2>
+                            <address><span class="c_red">地址：</span>西湖区玉古路168号</address>
+                            <address><span class="c_red">电话: </span>0571-88888888</address>
+                            <p>简介：V-show KTV它们分布在北京、天津、重庆、成都、武汉、昆明、西安、大连、长沙、杭州、苏州、深圳、宁波、金华等城市共有4000余间包房。 好乐迪公司的经营理念是，以人为本，服务至上。抓细微处，力求完美。在服务上使每一位来店客人都能受到服务人员的热情招呼和接待，使他们有一种宾至如归感觉。在管理上惩罚分明，充分发挥8000余员工的积极性和主观能动性，群策群力，不断提高服务水平。不论是现在还是将来，公司将持之以恒的以最专业的经营团队和经营方式，最优质的服务，最佳的欢唱环境，最时尚的K歌片库，为每一位消费者创造并提供一个独特的优质的休闲娱乐场所！</p>
+                        </div>
+
+                    </div>
+                    
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer style="margin-top:20px;">
+        <div class="w1600">
+
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

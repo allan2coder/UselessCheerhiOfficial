@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>去嗨-我的账号</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <!-- <link rel="stylesheet" href="css/personal-center.css" /> -->
+    <link rel="stylesheet" href="css/mycenter.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/cheerhi1.ico" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body style="background:#f7f6f2;">
+    <!-- 顶部 -->
+    <header class="top_bar">
+        <h1 class="brand">
+            <a class="toplogo" href="#"></a>
+            <span class="slogan">睡你麻痹，起来嗨！</span>
+        </h1>
+        <div class="search">
+            <form action="" method="get" id="search_notes">
+                <!-- <div style="display:none;">
+                    <input type="hidden" />
+                </div> -->
+                <span class="icon"></span>
+                <input type="text" onblur="" id="query" placeholder="搜索KTV" />
+            </form>
+        </div>
+        <nav class="top_nav">
+            <ul>
+                <li class="my_center"><a href="">Funny白亚平子 <i></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="top_bg">
+        <div class="title">
+            <div class="sayhi"><p>下午好！</p></div>
+            <h1>Funny白亚平子</h1>
+        </div>
+    </div>
+
+    <div class="h556 center_wrapper">
+        <div class="nav">
+            <ul>
+                <li class="my_reserve"><a href="#"><i></i>我的预定订单</a></li>
+                <li class="my_account current"><a href="#"><i></i>我的账号</a></li>
+            </ul>
+        </div>
+        <div class="clearfix">
+            <div class="account_wrapper clearfix">
+                <div class="pl">
+                    <img src="img/myaccount_head.png" alt="">
+                    <button>修改头像</button>
+                </div>
+                <div class="pr">
+                    <form action="">
+                        <p>昵称<input type="text"></p>
+                        <p>性别</p>
+                        <a class="man" href=""><i></i>男</a>
+                        <a class="woman" href=""><i></i>女</a>
+                    </form>
+                    
+                    <div class="date">
+                        <p>
+                        <label>生日：</label>
+                        <select id="sel_year"></select>年
+                        <select id="sel_month"></select>月
+                        <select id="sel_day"></select>日
+                        </p>
+                    </div>
+                    <script>
+                    $(function () {
+                        $.ms_DatePicker({
+                                YearSelector: ".sel_year",
+                                MonthSelector: ".sel_month",
+                                DaySelector: ".sel_day"
+                        });
+                        $.ms_DatePicker();
+                    }); 
+                    </script>
+
+                    <div class="phone">
+                        <p>手机号码</p>
+                        <p>18867160828</p>
+                        <a href="#">修改</a>
+                    </div>
+                </div>
+            </div>
+            <div class="save fr">
+                <a href="#">保存</a>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/birthday.js"></script>
+</body>
+</html>

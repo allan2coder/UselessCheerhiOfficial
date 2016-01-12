@@ -1,0 +1,20 @@
+ @charset "utf-8";
+/*
+*公用css
+*/
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+fieldset,img { border:0; }
+ol,ul { list-style:none; }
+h1,h2,h3,h4,h5,h6,button,input,select,textarea { /*font-size:100%; */
+    font-weight: normal; }
+button::-moz-focus-inner,input::-moz-focus-inner{ padding:0; border:0; }
+table{ border-collapse: collapse; border-spacing: 0; }
+i, cite, em, var, dfn, address { font-style: normal; }
+body{ font:14px "微软雅黑","宋体",Arial; color:#313131; }
+a{ color:#333; text-decoration:none; outline: none; }
+a:hover{ text-decoration: none; }
+a:active, a:focus{ outline:none; }
+b{ font-weight: normal; }
+input ,button{ border: none; }
+button{ background:none; cursor: pointer; }

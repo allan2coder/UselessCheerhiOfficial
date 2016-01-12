@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>去嗨-评价</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" href="css/mycenter.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/star.css">
+    <link rel="stylesheet" href="css/zyUpload.css">
+    <link rel="shortcut icon" href="img/cheerhi1.ico" />
+
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body style="background:#f7f6f2; height: 1408px;">
+    <!-- 顶部 -->
+    <header class="top_bar">
+        <h1 class="brand">
+            <a class="toplogo" href="#"></a>
+            <span class="slogan">睡你麻痹，起来嗨！</span>
+        </h1>
+        <div class="search">
+            <form action="" method="get" id="search_notes">
+                <!-- <div style="display:none;">
+                    <input type="hidden" />
+                </div> -->
+                <span class="icon"></span>
+                <input type="text" onblur="" id="query" placeholder="搜索KTV" />
+            </form>
+        </div>
+        <nav class="top_nav">
+            <ul>
+                <li class="my_center"><a href="">Funny白亚平子 <i></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 评价 -->
+    <div class="assess">
+        <h1>评价V-SHOW玉古店</h1>
+
+        <div class="star">
+            <div class="gradecon" id="Addnewskill_119">
+                <ul class="rev_pro clearfix">
+                    <li class="circumstance">
+                        <h2><i></i>环境</h2>
+                        <div class="revinp">
+                            <span class="level">
+                                <i class="level_solid" cjmark="" data="1"></i>
+                                <i class="level_solid" cjmark="" data="2"></i>
+                                <i class="level_solid" cjmark="" data="3"></i>
+                                <i class="level_hollow" cjmark="" data="4"></i>
+                                <i class="level_hollow" cjmark="" data="5"></i>
+                            </span>
+                            <!-- <span class="revgrade"></span> -->
+                        </div>
+                    </li>
+                    <li class="serve">
+                        <h2><i></i>服务</h2>
+                        <div class="revinp">
+                            <span class="level">
+                                <i class="level_solid" cjmark="" data="1"></i>
+                                <i class="level_solid" cjmark="" data="2"></i>
+                                <i class="level_solid" cjmark="" data="3"></i>
+                                <i class="level_solid" cjmark="" data="4"></i>
+                                <i class="level_hollow" cjmark="" data="5"></i>
+                            </span>
+                            <!-- <span class="revgrade"></span> -->
+                        </div>
+                    </li>
+                    <li class="device">
+                        <h2><i></i>设备</h2>
+                        <div class="revinp">
+                            <span class="level">
+                                <i class="level_solid" cjmark=""></i>
+                                <i class="level_solid" cjmark=""></i>
+                                <i class="level_solid" cjmark=""></i>
+                                <i class="level_solid" cjmark=""></i>
+                                <i class="level_hollow" cjmark=""></i>
+                            </span>
+                            <!-- <span class="revgrade"></span> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="boundary"></div>
+        <div class="pub">
+            <textarea  name="" id="" cols="30" rows="10" placeholder="您的意见对其他顾客有很大的帮助呦~！"></textarea>
+            
+            <!-- 图片上传按钮 -->
+			<div class="webuploader_pick"></div>
+			<div id="upload" class="demo">
+    			<form id="uploadForm" action="'+para.url+'" method="post" enctype="multipart/form-data">
+
+    				<input type="hidden" name="circumstance">
+    				<input type="hidden" name="serve">
+    				<input type="hidden" name="device">
+
+            		<input id="fileImage" type="file" size="30" name="fileselect[]" >
+                	<!-- <div class="status_bar">
+                		<div id="status_info" class="info">选中0张文件，共0B</div>
+                		<div class="btns"></div>
+                	</div> -->
+    				<div id="preview" class="upload_preview"></div>
+    			</form>
+			</div>
+        </div>
+        
+    </div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<!-- 图片上传引用核心层插件 -->
+<script src="js/zyFile.js"></script>
+
+<!-- 图片上传引用控制层插件 -->
+<script src="js/zyUpload.js"></script>
+
+<!-- 图片上传引用初始化JS -->
+<script src="js/script.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    // var degree = ['','很差','差','一般','好','非常好','未评分'];
+    //重新点评
+    function addComment2(e,inid,opt,id){
+    $.ajax({
+    url:'/siteMessage/content',
+    type:'post',
+    data:'id='+id,
+    dataType:'json',
+    success:function(data){
+    if(data.status==1){
+    var list = $('#Addnewskill_119');
+    list.eq(0).html(data.talent+'(人才ID：'+data.talentId+')');
+    list.eq(1).html(data.job);
+    list.eq(2).html(data.ms);
+
+    var arr = [data.total,data.expAuth,data.killAuth,data.followTime,data.formality,data.appReact];
+    var list2 = $('span.level','#Addnewskill_119');
+    $('input[name="InterviewCommentInfoSub[opt]"]').val(opt+1);
+    list2.each(function(i,v){
+    var a = '';
+
+    if(i>0){
+        a = 'cjmark';
+        $(v).parents('li').find('input').val(arr[i]);
+    }
+    var str = '';
+    if(arr[i]==6){
+        for(var n=0;n<=4;n++){
+            str += '<i '+a+' class="level_hollow"></i>';
+        }
+        $(v).parents('li').find('input').prop('disabled',true)
+    }else{
+        $(v).parents('li').find('input').prop('checked',true)
+        for(var n=0;n<arr[i];n++){
+            str += '<i '+a+' class="level_solid"></i>';
+        }
+        for(var n=0;n<(5-arr[i]);n++){
+            str += '<i '+a+' class="level_hollow"></i>';
+        }
+    }
+    $(v).html(str);
+    $(v).next().html(degree[arr[i]]);
+
+    })
+
+    create_show(119);
+    }else{
+    ui.error(data.msg,2000);
+    }
+    }
+    })  
+    }
+    //提交点评
+    function addComment3(){
+    $.ajax({
+    url:'/siteMessage/commentinterview',
+    type:'post',
+    data:$('form[name="comment"]').serialize(),
+    dataType:'json',
+    success:function(data){
+
+    }
+
+    })
+    }
+    $(function(){
+    //点星星
+    $(document).on('mouseover','i[cjmark]',function(){
+    var num = $(this).index();
+    var pmark = $(this).parents('.revinp');
+    var mark = pmark.prevAll('input');
+
+    if(mark.prop('checked')) return false;
+
+    var list = $(this).parent().find('i');
+    for(var i=0;i<=num;i++){
+    list.eq(i).attr('class','level_solid');
+    }
+    for(var i=num+1,len=list.length-1;i<=len;i++){
+    list.eq(i).attr('class','level_hollow');
+    }
+    // $(this).parent().next().html(degree[num+1]);
+
+    })
+    //点击星星
+    $(document).on('click','i[cjmark]',function(){
+    var star = $(this);
+
+    var num = $(this).index();
+    var pmark = $(this).parents('.revinp');
+    var mark = pmark.prevAll('input');
+    mark.val(num);
+    mark.prop('checked',true);mark.prop('disabled',false);  
+
+    var _class = star.parent().parent().parent().attr('class');
+    $('input[name='+_class+']').val(star.attr('data'));
+    })
+});
+    //图片删除
+    $(".webuploader_pick").hover(function(){
+        $("#preview").children().each(function(index,e) {
+         if (this.style.display === 'none') this.parentNode.removeChild(this);
+        });
+    })
+</script>
+</body>
+</html>

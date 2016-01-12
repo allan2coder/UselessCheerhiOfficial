@@ -1,0 +1,33 @@
+.gradecon{
+    margin:40px auto 0 auto;
+}
+.rev_pro li{
+    margin-bottom: 40px; 
+}
+.rev_pro li .revtit{
+    text-align:right;
+    display:block;
+    float:left;
+    margin-right:10px;
+    width:70px;
+}
+.revinp{
+    display:inline;
+}
+.level .level_solid,.level .level_hollow{
+    background-image:url("../img/one_star.png");
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+.level .level_solid{
+    background-position:0px 0px;
+}
+.level .level_hollow{
+    background-position:-39px 0px;
+}
+.revgrade{
+    margin-left:20px;
+}

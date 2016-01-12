@@ -1,0 +1,132 @@
+ @charset "utf-8";
+ /*日历样式*/
+
+ .shadow-b{
+ 	box-shadow:0px 1px 1px #d7d7d6;
+ }
+ .bs-datepicker{
+ 	margin-left: 26px;
+ }
+ .bs-datepicker input{
+ 	display: inline-block;
+ }
+.modal-body{
+    border: 0 none;
+    color: #333;
+    margin: 0 22px;
+    width: auto;
+}
+ .content-datepicker {
+    background: url("../img/calendar.png") no-repeat 210px center;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 14px;
+    color: #666;
+    width: 242px;
+    line-height: 52px;
+    margin-bottom: 30px;
+}
+.modal-body input {
+    border: 0 none;
+    color: #333;
+    cursor: pointer;
+    margin-left: 14px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.content-datepicker input{
+    width: 124px;
+}
+.timepicker_pluge input{
+    width: 60px;
+}
+.up{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    width: 40px;
+    height: 26px;
+    background: #f7f7f7 url(../img/up_icon.png) no-repeat center center;
+}
+.up:active{
+    transform: scale(0.9);
+}
+.down{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    width: 40px;
+    height: 26px;
+    background: #f7f7f7 url(../img/down_icon.png) no-repeat center center;
+}
+.down:active{
+    transform: scale(0.9);
+}
+.timepicker_pluge .time_btn{
+    background: #f7f7f7;
+    display: inline-block;
+    width: 40px;
+    float: right;
+    height: 52px;
+}
+.btn-default:hover{
+    background: #d1524b;
+}
+.timepicker_pluge{
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 15px;
+    color: #666;
+    width: 196px;
+    line-height: 52px;
+    float: left;
+
+    position: relative;
+}
+.hours{
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 15px;
+    color: #666;
+    width: 196px;
+    line-height: 52px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    /*区域内文字选不中*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hours input{
+    width: 24px;
+}
+.h-up{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    width: 40px;
+    height: 26px;
+    background: #f7f7f7 url(../img/up_icon.png) no-repeat center center;
+}
+.h-up:active{
+    transform: scale(0.9);
+}
+.h-down{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    width: 40px;
+    height: 26px;
+    background: #f7f7f7 url(../img/down_icon.png) no-repeat center center;
+}
+.h-down:active{
+    transform: scale(0.9);
+}
